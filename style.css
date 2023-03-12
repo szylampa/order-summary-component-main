@@ -27,7 +27,9 @@ body {
     font-size: 16px;
 }
 
-
+.illustration-hero {
+    min-width: 100%;
+}
 
 .container {
     max-width: 450px;
@@ -88,13 +90,15 @@ body {
 }
 
 
-.button {
+.button,
+.button:visited {
     font-family: inherit;
     font-weight: 900;
     background-color: inherit;
     border: 0;
     border-radius: 0.625rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .proceed-btn {
@@ -117,4 +121,17 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--pale-blue);
+    }
+
+    .container {
+        max-width: 375px;
+    }
 }
