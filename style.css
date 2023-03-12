@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
@@ -9,8 +16,23 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(./images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    max-width: 450px;
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .attribution {
