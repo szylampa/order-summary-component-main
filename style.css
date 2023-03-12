@@ -30,14 +30,46 @@ body {
 
 .container {
     max-width: 450px;
-    background-color: var(--very-pale-blue);
+    background-color: white;
     border-radius: 1rem;
     overflow: hidden;
+}
+
+.text-content {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: var(--desaturated-blue);
+}
+
+.plan-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.plan-box a {
+    margin-left: auto;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .attribution a {
