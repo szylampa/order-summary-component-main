@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 
 
@@ -33,10 +34,11 @@ body {
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.3);
 }
 
 .text-content {
-    padding: 3rem;
+    padding: 2.5rem 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -60,10 +62,51 @@ body {
     background-color: var(--very-pale-blue);
     border-radius: 1rem;
     padding: 1.5rem 1.5rem;
+
 }
 
-.plan-box a {
+.plan-box a,
+.plan-box a:visited {
     margin-left: auto;
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.plan-box h5 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.plan-text {
+    text-align: left;
+
+}
+
+.plan-text p {
+    color: var(--desaturated-blue);
+}
+
+
+.button {
+    font-family: inherit;
+    font-weight: 900;
+    background-color: inherit;
+    border: 0;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.proceed-btn {
+    background-color: var(--bright-blue);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.cancel-btn {
+    color: var(--desaturated-blue);
 }
 
 .attribution {
